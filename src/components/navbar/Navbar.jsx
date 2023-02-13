@@ -7,7 +7,6 @@ import { auth } from "../../utils/firebase";
 import UserNavbar from "./UserNavbar.jsx";
 
 export const Navbar = () => {
-  const [authenticate, setAuthenticate] = useState(false || window.localStorage.getItem("authenticate") === "true");
   const [openModal, setOpenModal] = useState(false);
   const [user, loading] = useAuthState(auth);
 
